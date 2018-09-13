@@ -1,9 +1,5 @@
 <?php
-
-
 namespace AppData\Config;
-
-
 class Enrutador
 {
     public static function run(Request $request)
@@ -12,7 +8,6 @@ class Enrutador
         $ruta = ROOT . "AppData" . DS . "Controller" . DS . $controlador . ".php";
         $metodo = $request->getMetodo();
         $argumento = $request->getArgumento();
-
         if (is_readable($ruta)) {
             require_once($ruta);
             $mostrar = "AppData\\Controller\\" . $controlador;
@@ -23,10 +18,8 @@ class Enrutador
                 $datos = call_user_func(array($controlador, $metodo), $argumento);
             }
         }
-
         if ($request->getMetodo() != "modificar") {
             $ruta = ROOT . "Views" . DS . $request->getControlador() . DS . $request->getMetodo() . ".php";
-
             if (is_readable($ruta))
                 require_once($ruta);
             else

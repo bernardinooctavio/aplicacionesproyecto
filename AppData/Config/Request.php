@@ -1,7 +1,6 @@
 <?php
 namespace AppData\Config;
 use AppData\Model\login;
-
 class Request
 {
     private $controlador;
