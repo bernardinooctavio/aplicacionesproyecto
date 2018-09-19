@@ -8,16 +8,16 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="#">ALUMNOS <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">ALUMNOS </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">MATERIA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">DOCENTE</a>
+                <a class="nav-link " href="#">DOCENTE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">GEFE DE DIVISION</a>
+                <a class="nav-link " href="#">JEFE DE DIVISION</a>
             </li>
 
 

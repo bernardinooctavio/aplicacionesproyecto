@@ -4,8 +4,7 @@
             <div class="col-12 col-md-3">
                 <img alt="Image" src="assets/img/logo-white.svg" class="mb-4">
                 <p class="text-muted">
-                  <br>
-                  <br>
+
                     Km. 30 de la Carretera Federal Monumento - Valle de Bravo,
                     <br>Ejido de San Antonio de la Laguna,
                     <br>Valle de Bravo, Estado de México, C.P. 51200.
@@ -13,10 +12,8 @@
             </div>
             <!--end of col-->
             <div class="col-12 col-md-9">
-                <span class="h5">A robust suite of styled components for Bootstrap 4</span>
                 <div class="row no-gutters">
                     <div class="col-6 col-lg-3">
-                        <h6>Navigate</h6>
                         <ul class="list-unstyled">
                             <li>
                                 <a href="index.html">Overview</a>
@@ -34,7 +31,7 @@
                     </div>
                     <!--end of col-->
                     <div class="col-6 col-lg-3">
-                        <h6>Platform</h6>
+
                         <ul class="list-unstyled">
                             <li>
                                 <a href="#">Mac OS &amp; iOS</a>
@@ -52,7 +49,7 @@
                     </div>
                     <!--end of col-->
                     <div class="col-6 col-lg-3">
-                        <h6>Community</h6>
+
                         <ul class="list-unstyled">
                             <li>
                                 <a href="#">Forum</a>
@@ -73,7 +70,7 @@
                     </div>
                     <!--end of col-->
                     <div class="col-6 col-lg-3">
-                        <h6>Company</h6>
+
                         <ul class="list-unstyled">
                             <li>
                                 <a href="#">About company</a>
@@ -98,3 +95,4 @@
         <!--end of row-->
     </div>
     <!--end of container-->
+</footer>
