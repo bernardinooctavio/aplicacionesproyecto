@@ -17,7 +17,7 @@
                 <a class="nav-link disabled" href="#">DOCENTE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">GEFE DE DIVICION</a>
+                <a class="nav-link disabled" href="#">GEFE DE DIVISION</a>
             </li>
 
 

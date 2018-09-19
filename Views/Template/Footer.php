@@ -4,6 +4,8 @@
             <div class="col-12 col-md-3">
                 <img alt="Image" src="assets/img/logo-white.svg" class="mb-4">
                 <p class="text-muted">
+                  <br>
+                  <br>
                     Km. 30 de la Carretera Federal Monumento - Valle de Bravo,
                     <br>Ejido de San Antonio de la Laguna,
                     <br>Valle de Bravo, Estado de México, C.P. 51200.
@@ -96,4 +98,3 @@
         <!--end of row-->
     </div>
     <!--end of container-->
-</footer>

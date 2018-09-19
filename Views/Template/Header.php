@@ -14,6 +14,6 @@
     <script type="text/javascript" src="Public/js/bootstrap.bundle.js"></script>
 
 
-    <!-- Custom styles for this template -->
+
     <link href="product.css" rel="stylesheet">
 </head>
