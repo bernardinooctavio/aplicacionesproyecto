@@ -6,6 +6,7 @@ class Enrutador
     {
         $controlador = $request->getControlador() . "Controller";
         $ruta = ROOT . "AppData" . DS . "Controller" . DS . $controlador . ".php";
+        //echo $ruta;
         $metodo = $request->getMetodo();
         $argumento = $request->getArgumento();
         if (is_readable($ruta)) {

@@ -1,30 +1,39 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <div class="">
+    <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <button class="nav-link active btn-outline-light" href="#">TESVB</button>
+  </li>
+  <li class="nav-item dropdown">
+    <button class="nav-link dropdown-toggle btn-outline-light" style="margin-left:1em;" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Calificaciones</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Ver</a>
+      <a class="dropdown-item" href="#">Acentar</a>
+      <a class="dropdown-item" href="#">Modificar</a>
 
-    <a class="navbar-brand" href="#">TESVB</a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">ALUMNOS </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">MATERIA</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">DOCENTE</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">JEFE DE DIVISION</a>
-            </li>
+  </li>
+  <li class="nav-item dropdown">
+    <button class="nav-link dropdown-toggle btn-outline-light" style="margin-left:1em;" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Materia</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Asignar</a>
 
 
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
-    </div>
+  </li>
+  <li class="nav-item dropdown">
+    <button class="nav-link dropdown-toggle btn-outline-light" style="margin-left:1em;" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Reportes</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Materia</a>
+      <a class="dropdown-item" href="#">Grupo</a>
+      <a class="dropdown-item" href="#">Aprobacion</a>
+
+  </li>
+    <button class="nav-link toggle btn-outline-light" style="margin-left:28em;" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Iniciar Sesion</button>
+    <button class="nav-link toggle btn-outline-light" style="margin-left:1em;" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Registrar </button>
+
+
+
+
+
+</ul>
+  </div>
 </nav>
