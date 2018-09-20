@@ -1,6 +1,6 @@
 <?php
 namespace AppData\Model;
-class Login
+class Registro
 {
   function __construct()
   {

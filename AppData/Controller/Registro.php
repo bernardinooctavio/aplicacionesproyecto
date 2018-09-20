@@ -1,13 +1,13 @@
 <?php
 namespace AppData\Controller;
-use AppData\Model\Login;
+use AppData\Model\Registro;
 
 class LoginController
 {
-  private $login;
+  private $registro;
   function __construct()
   {
-    $this->login=new Login();
+    $this->registro=new Registro();
   }
   function index()
   {
