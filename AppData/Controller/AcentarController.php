@@ -1,12 +1,12 @@
 <?php
   namespace AppData\Controller;
-  use AppData\Model\Home;
-  class HomeController
+  use AppData\Model\Acentar;
+  class AcentarController
   {
-    private $home;
+    private $acentar;
     function __construct()
     {
-      $this->home=new Home();
+      $this->acentar=new Acentar();
     }
     function index()
     {

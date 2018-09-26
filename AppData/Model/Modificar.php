@@ -1,6 +1,6 @@
 <?php
     namespace AppData\Model;
-    class Home
+    class Modificar
       {
         function __construct()
         {

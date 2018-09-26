@@ -1,6 +1,6 @@
 <?php
     namespace AppData\Model;
-    class Home
+    class Ver
       {
         function __construct()
         {

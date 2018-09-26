@@ -1,12 +1,12 @@
 <?php
   namespace AppData\Controller;
-  use AppData\Model\Home;
-  class HomeController
+  use AppData\Model\Aprobacion;
+  class AprobacionController
   {
-    private $home;
+    private $aprobacion;
     function __construct()
     {
-      $this->home=new Home();
+      $this->aprobacion=new Aprobacion();
     }
     function index()
     {

@@ -1,12 +1,12 @@
 <?php
   namespace AppData\Controller;
-  use AppData\Model\Home;
-  class HomeController
+  use AppData\Model\Asignar;
+  class AsignarController
   {
-    private $home;
+    private $asignar;
     function __construct()
     {
-      $this->home=new Home();
+      $this->asignar=new Asignar();
     }
     function index()
     {

@@ -4,10 +4,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
+
     <title>Calificaciones TESVB</title>
+
     <!-- Bootstrap core CSS -->
     <link href="Public/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="Public/js/jquery.js"></script>
     <script type="text/javascript" src="Public/js/popper.min.js"></script>
     <script type="text/javascript" src="Public/js/bootstrap.bundle.js"></script>
-</head>
+
+
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>

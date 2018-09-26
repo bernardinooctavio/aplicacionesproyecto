@@ -1,10 +1,11 @@
 <?php
     namespace AppData\Model;
-    class Home
+    class Materia
       {
-        function __construct()
+        private $nombre, $contraseña;
+        public function __construct()
         {
-
+            //$this->conexion= new conexion();
         }
         public function set($atributo,$valor)
         {
@@ -18,5 +19,9 @@
         {
 
         }
+        public function index(){
+
+        }
       }
+
  ?>

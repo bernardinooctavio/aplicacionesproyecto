@@ -1,22 +1,21 @@
 <?php
-namespace AppData\Controller;
-use AppData\Model\Login;
-
-class LoginController
-{
-  private $login;
-  function __construct()
+  namespace AppData\Controller;
+  use AppData\Model\Login;
+  class loginController
   {
-    $this->login=new Login();
-  }
-  function index()
-  {
+    private $login;
+    function __construct()
+    {
+      $this->login=new Login();
+    }
+    function index()
+    {
 
-  }
-  function __destruct()
-  {
+    }
+    function __destruct()
+    {
 
+    }
   }
-}
 
  ?>

@@ -1,12 +1,12 @@
 <?php
   namespace AppData\Controller;
-  use AppData\Model\Home;
-  class HomeController
+  use AppData\Model\Ver;
+  class VerController
   {
-    private $home;
+    private $ver;
     function __construct()
     {
-      $this->home=new Home();
+      $this->ver=new Ver();
     }
     function index()
     {

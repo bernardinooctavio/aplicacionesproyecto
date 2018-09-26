@@ -1,12 +1,12 @@
 <?php
   namespace AppData\Controller;
-  use AppData\Model\Home;
-  class HomeController
+  use AppData\Model\Materia;
+  class MateriaController
   {
-    private $home;
+    private $materia;
     function __construct()
     {
-      $this->home=new Home();
+      $this->materia=new Materia();
     }
     function index()
     {

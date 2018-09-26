@@ -9,7 +9,7 @@
       <div class="">
         <div class="panel panel-default">
           <div class="panel-heading text-center">
-            <h3 class="panel-title">Bienvenido Por Favor Registrese</h3>
+            <h3 class="panel-title">Bienvenidos Por Favor Registrese</h3>
           </div>
           <div class="panel-body">
             <form role="form">

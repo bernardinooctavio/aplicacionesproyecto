@@ -1,12 +1,12 @@
 <?php
   namespace AppData\Controller;
-  use AppData\Model\Home;
-  class HomeController
+  use AppData\Model\Registro;
+  class RegistroController
   {
-    private $home;
+    private $registro;
     function __construct()
     {
-      $this->home=new Home();
+      $this->registro=new Registro();
     }
     function index()
     {

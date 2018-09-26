@@ -1,12 +1,12 @@
 <?php
   namespace AppData\Controller;
-  use AppData\Model\Home;
-  class HomeController
+  use AppData\Model\Grupo;
+  class GrupoController
   {
-    private $home;
+    private $grupo;
     function __construct()
     {
-      $this->home=new Home();
+      $this->grupo=new Grupo();
     }
     function index()
     {
