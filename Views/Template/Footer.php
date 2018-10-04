@@ -13,10 +13,8 @@
          </ul>
        </div>
        <div class="col-6 col-md">
-          <img src="logo.jpg" alt="aplicacionesproyecto" width="150" height="100">
-       </div>
-       <div class="col-6 col-md">
-          <img src="edomex.jpg" alt="aplicacionesproyecto" width="200" height="100">
+          <img src="logo.jpg" alt="aplicacionesproyecto" width="75" height="50">
+          <img src="edomex.jpg" alt="aplicacionesproyecto" width="100" height="50">
        </div>
      </div>
    </footer>

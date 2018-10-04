@@ -23,8 +23,8 @@
       <a class="dropdown-item" href="<?php echo URL; ?>Aprobacion">Aprobacion</a>
       </li>
       <form class="form-inline mt-2 mt-md-0" style="margin-left:25em;">
-            <a class="btn btn-outline-light text-white my-2 my-sm-0" type="submit" href="<?php echo URL; ?>Login">Iniciar Sesion</a>
-            <a class="btn btn-outline-light text-white my-2 my-sm-0" style="margin-left:1em;" type="submit" href="<?php echo URL; ?>Registro">Registrar</a>
+            <a class="btn btn-outline-light text-white my-2 my-sm-0"  href="<?php echo URL; ?>Login">Iniciar Sesion</a>
+            <a class="btn btn-outline-light text-white my-2 my-sm-0" style="margin-left:1em;" href="<?php echo URL; ?>Registro">Registrar</a>
       </form>
     </ul>
 </nav>

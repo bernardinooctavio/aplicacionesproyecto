@@ -2,8 +2,9 @@
 namespace AppData\Model;
 class conexion
 {
-    private $datos=array("server"=>"localhost","user"=>"root","password"=>"", "base"=>"hotel");
+    private $datos=array("server"=>"localhost","user"=>"root","password"=>"", "base"=>"calificaciones");
     private $conexion;
+
     function __construct()
     {
         $this->conexion=new \mysqli($this->datos["server"],$this->datos["user"], $this->datos["password"],$this->datos["base"]);
@@ -18,8 +19,11 @@ class conexion
         $datos=$this->conexion->query($sql) or die (mysqli_error($this->conexion));
         return $datos;
     }
+
     public function __destruct()
     {
         $this->conexion->close();
     }
 }
+
+?>
