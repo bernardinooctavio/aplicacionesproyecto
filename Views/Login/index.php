@@ -16,10 +16,11 @@
       <input type="checkbox" value="remember-me">Recordar Contraseña
     </label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Inicio de Sesion</button>
+        <button type="submit" name="login-submit" tabindex="6" class="btn btn-info btn-block" href="<?php echo URL; ?>" id="entrar">Entrar</button>
 </form>
   </div>
   <div class="col-md-4">
   </div>
 </div>
 </div>
+

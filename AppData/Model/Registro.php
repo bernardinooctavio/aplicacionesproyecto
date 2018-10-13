@@ -2,8 +2,10 @@
     namespace AppData\Model;
     class Registro
       {
+
         function __construct()
         {
+            $this->conexion = new conexion();
 
         }
         public function set($atributo,$valor)
@@ -14,9 +16,12 @@
         {
           return $this->$atributo;
         }
+
+
         public function getOne()
         {
 
         }
+
       }
  ?>
