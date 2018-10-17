@@ -1,4 +1,7 @@
 <form id="form-reg" class="" action="<?php echo URL ?>login/guardar" method="post">
+    <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="../js/jquery.validate.js"></script>
+  <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
 <div class="container" style="margin-top:5em;">
   <br>
   <br>
@@ -84,4 +87,52 @@
       </div>
 </div>
 </div>
+  <script>
+var = expr = /^[a-zA-Z0-9\.\-]+@[a-zA-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+
+
+$(document).ready(function(){
+$("#guardar").click(function(){
+var nombre =$("#inputnombre").val();
+	var apellido paterno = $("#ap_p").val();
+  var apellido materno = $("#am_m").val();
+  var edad = $("#edad").val();
+	var correo = $("#inputemail").val();
+  var password =$("#password").val();
+
+
+if(nombre == ""){
+	alert("ingresa un nombre porfavor").fadeIn();
+	return false;
+}
+
+if(apellido paterno == ""){
+	alert("ingresa tu apellido paterno porfavor").fadeIn();
+	return false;
+}
+
+if(apellido materno == ""){
+	alert("ingresa tu apellido materno porfavor").fadeIn();
+	return false;
+}
+
+if(edad == ""){
+	alert("ingresa tu edad porfavor (solo numeros)").fadeIn();
+	return false;
+}
+if(correo =="" || !expr.test(correo)){
+alert("ingresa una direccion de correo valida  porfavor").fadeIn();
+return false;
+}
+
+if(password == ""){
+	alert("ingresa tu contraseña porfavor").fadeIn();
+	return false;
+}
+
+
+
+});
+});
+</script>
 </form>
