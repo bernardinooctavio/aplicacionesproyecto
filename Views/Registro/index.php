@@ -126,7 +126,7 @@ return false;
 }
 
 if(password == ""){
-	alert("ingresa tu contraseña porfavor").fadeIn();
+	alert("ingresa una contraseña porfavor").fadeIn();
 	return false;
 }
 
