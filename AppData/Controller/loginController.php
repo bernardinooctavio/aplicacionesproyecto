@@ -49,6 +49,12 @@ class LoginController
 
         ?>
         <script type="text/javascript">
+		  swal({
+                    title: "Agregado correctamente",
+                    showCancelButton: true,
+                    confirmButtonText: "Confirm",
+                    confirmButtonColor: "#00ff99",
+                });
         window.location.href = "<?php echo URL ?>Login";
         //alert("entro")
         </script>
