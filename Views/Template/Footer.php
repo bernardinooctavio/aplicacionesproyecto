@@ -17,4 +17,7 @@
           <img src="edomex.jpg" alt="aplicacionesproyecto" width="100" height="50">
        </div>
      </div>
+     
+  <script src="<?php echo URL?>Public/js/boostrap.min.js"></script>
+  <script src="<?php echo URL?>Public/js/sweetalert.min.js" type="text/javascript"></script>
    </footer>
