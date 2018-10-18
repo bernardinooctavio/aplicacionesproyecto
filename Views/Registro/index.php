@@ -1,7 +1,4 @@
 <form id="form-reg" class="" action="<?php echo URL ?>login/guardar" method="post">
-    <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="../js/jquery.validate.js"></script>
-  <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
 <div class="container" style="margin-top:5em;">
   <br>
   <br>
@@ -45,6 +42,7 @@
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <div class="form-group">
                         <select class="form-control" placeholder="tipo" name="id_sexo">
+                            <option value="">Sexo</option>
                             <option value="1">Femenino</option>
                             <option value="2">Masculino</option>
                         </select>
@@ -54,6 +52,7 @@
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <div class="form-group">
                         <select class="form-control" placeholder="tipo" name="id_tipo_usuario">
+                            <option value="">Tipo de usuario</option>
                             <option value="1">Alumno</option>
                             <option value="2">Docente</option>
                             <option value="3">Jefe de divicion</option>
@@ -72,67 +71,120 @@
                     <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
                   </div>
 
+                <div class="center-form col-xs-15 col-sm-15 col-md-15">
 
-              <input type="submit" value="guardar" class="btn btn-info btn-block">
+                <input type="submit" value="guardar" class="btn btn-info btn-block">
 
-            </form>
+                </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-    <div>
-  <div class="col-md-4"></div>
-      </div>
 </div>
 </div>
-  <script>
-var = expr = /^[a-zA-Z0-9\.\-]+@[a-zA-9\-]+\.[a-zA-Z0-9\-\.]+$/;
-
-
-$(document).ready(function(){
-$("#guardar").click(function(){
-var nombre =$("#inputnombre").val();
-	var apellido paterno = $("#ap_p").val();
-  var apellido materno = $("#am_m").val();
-  var edad = $("#edad").val();
-	var correo = $("#inputemail").val();
-  var password =$("#password").val();
-
-
-if(nombre == ""){
-	alert("ingresa un nombre porfavor").fadeIn();
-	return false;
-}
-
-if(apellido paterno == ""){
-	alert("ingresa tu apellido paterno porfavor").fadeIn();
-	return false;
-}
-
-if(apellido materno == ""){
-	alert("ingresa tu apellido materno porfavor").fadeIn();
-	return false;
-}
-
-if(edad == ""){
-	alert("ingresa tu edad porfavor (solo numeros)").fadeIn();
-	return false;
-}
-if(correo =="" || !expr.test(correo)){
-alert("ingresa una direccion de correo valida  porfavor").fadeIn();
-return false;
-}
-
-if(password == ""){
-	alert("ingresa una contraseña porfavor").fadeIn();
-	return false;
-}
-
-
-
-});
-});
-</script>
 </form>
+    <script type="text/javascript">
+
+        $("#registrar").click(function()
+        {
+            $("#form-reg").submit();
+        });
+
+        //validaciones del formulario
+        jQuery.validator.addMethod("texto", function(value)
+        {
+            return /^[a-záéóóúàèìíòùäëïöüñ.\s]+$/i.test(value);
+        });
+
+        $("#form-reg").validate({
+            errorClass:"invalid",
+            rules:
+                {
+                    nombre:
+                        {
+                            required:true,
+                            texto:true,
+                        },
+                    ap_p:
+                        {
+                            required:true,
+                            texto:true,
+                        },
+                    ap_m:
+                        {
+                            required:true,
+                            texto:true,
+                        },
+                    edad:
+                        {
+                            required:true,
+                            texto:true,
+                        },
+                    id_sexo:
+                        {
+                            required:true,
+                            int:true,
+                        },
+                    id_tipo_usuario:
+                        {
+                            required:true,
+
+                        },
+                    nickname:
+                        {
+                            required:true,
+
+                        },
+                    password:
+                        {
+                            required:true,
+
+                        },
+                },
+            messages:
+                {
+                    nombre:
+                        {
+                            required:"Nombre obligatorio",
+                            texto:"Solo puede introducir texto"
+                        },
+                    ap_p:
+                        {
+                            required:"Apellido paterno obligatorio",
+                            texto:"Solo puede introducir texto"
+                        },
+                    ap_m:
+                        {
+                            required:"Apellido materno obligatorio",
+                            texto:"Solo puede introducir texto"
+                        },
+                    edad:
+                        {
+                            required:"Edad obligatoria",
+
+                        },
+                    id_sexo:
+                        {
+                            required:"Sexo obligatorio",
+                        },
+                    id_tipo_usuario:
+                        {
+                            required:"Tipo de usuario obligatoria",
+
+                        },
+                    nickname:
+                        {
+                            required:"Nombre de usuario obligatoria",
+
+                        },
+                    password:
+                        {
+                            required:"Contraseña obligatoria",
+
+                        },
+                },
+        });
+
+    </script>

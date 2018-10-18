@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1b42674d-6b6d-470b-b76a-829721e6b649" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppData/Controller/RegistroController.php" beforeDir="false" afterPath="$PROJECT_DIR$/AppData/Controller/RegistroController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppData/Controller/loginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/AppData/Controller/loginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppData/Model/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/AppData/Model/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppData/Model/Registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/AppData/Model/Registro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Login/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Registro/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Registro/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Template/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Template/Header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,29 +16,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Views/Registro/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+            <state relative-caret-position="342">
+              <caret line="85" column="6" lean-forward="true" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loginController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppData/Controller/loginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistroController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppData/Controller/RegistroController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Registro.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppData/Model/Registro.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/Login/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="279">
+              <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Nav.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/Template/Nav.php">
+      <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/Template/Header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -56,13 +80,11 @@
       <list>
         <option value="$PROJECT_DIR$/AppData/Config/Enrutador.php" />
         <option value="$PROJECT_DIR$/Views/Template.php" />
-        <option value="$PROJECT_DIR$/Views/Template/Header.php" />
         <option value="$PROJECT_DIR$/Views/Inicio/index.php" />
         <option value="$PROJECT_DIR$/Views/Template/Footer.php" />
         <option value="$PROJECT_DIR$/Views/Template/Nav.php" />
         <option value="$PROJECT_DIR$/Views/Template/Main.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/AppData/Model/conexion.php" />
         <option value="$PROJECT_DIR$/Views/Ver/index.php" />
         <option value="$PROJECT_DIR$/Views/Modificar/index.php" />
         <option value="$PROJECT_DIR$/Views/Acentar/index.php" />
@@ -71,8 +93,10 @@
         <option value="$PROJECT_DIR$/AppData/Controller/LoginController.php" />
         <option value="$PROJECT_DIR$/AppData/Model/Login.php" />
         <option value="$PROJECT_DIR$/AppData/Controller/loginController.php" />
-        <option value="$PROJECT_DIR$/Views/Registro/index.php" />
+        <option value="$PROJECT_DIR$/AppData/Model/conexion.php" />
+        <option value="$PROJECT_DIR$/Views/Template/Header.php" />
         <option value="$PROJECT_DIR$/Views/Login/index.php" />
+        <option value="$PROJECT_DIR$/Views/Registro/index.php" />
       </list>
     </option>
   </component>
@@ -112,12 +136,31 @@
             <path>
               <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Login" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Registro" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
@@ -175,14 +218,18 @@
       <workItem from="1539261769257" duration="5069000" />
       <workItem from="1539304141385" duration="2193000" />
       <workItem from="1539386378318" duration="4915000" />
+      <workItem from="1539737394226" duration="721000" />
+      <workItem from="1539804323918" duration="5651000" />
+      <workItem from="1539818260139" duration="1973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36208000" />
+    <option name="totallyTimeSpent" value="44553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -214,19 +261,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Views/Registro/index.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Template/Nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Login/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Registro/index.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
           <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppData/Model/login.php">
+    <entry file="file://$PROJECT_DIR$/AppData/Model/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppData/Controller/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/AppData/Controller/loginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
@@ -247,7 +315,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppData/Controller/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/AppData/Controller/loginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
@@ -282,7 +350,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppData/Controller/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/AppData/Controller/loginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
@@ -296,7 +364,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppData/Model/login.php">
+    <entry file="file://$PROJECT_DIR$/AppData/Model/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
@@ -457,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppData/Model/conexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/Modificar/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -492,17 +553,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Template/Header.php">
+    <entry file="file://$PROJECT_DIR$/AppData/Model/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="567">
+          <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppData/Model/Registro.php">
+    <entry file="file://$PROJECT_DIR$/Views/Template/Nav.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="465">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppData/Model/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Template/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -513,38 +588,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Registro/index.php">
+    <entry file="file://$PROJECT_DIR$/AppData/Model/Registro.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppData/Model/login.php">
+    <entry file="file://$PROJECT_DIR$/AppData/Controller/loginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AppData/Controller/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Template/Nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="417">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/Login/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="279">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Registro/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="85" column="6" lean-forward="true" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
         </state>
       </provider>
     </entry>
