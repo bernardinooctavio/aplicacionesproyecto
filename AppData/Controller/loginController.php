@@ -96,12 +96,18 @@ class LoginController
 
         ?>
         <script type="text/javascript">
-		  swal({
-                    title: "Agregado correctamente",
-                    showCancelButton: true,
-                    confirmButtonText: "Confirm",
-                    confirmButtonColor: "#00ff99",
-                });
+		  
+  swal({
+                      title: "El registro se realizado correctamente",
+                      showCancelButton: false,
+                      confirmButtonText: "Cargando...",
+                      confirmButtonColor: "#00b8cc",
+                    }, function () {
+  setTimeout(function () {
+    swal("el registro se ha realizado correctamente");
+  }, 200000)
+                  });
+
         window.location.href = "<?php echo URL ?>Login";
         //alert("entro")
         </script>
