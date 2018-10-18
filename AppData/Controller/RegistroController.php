@@ -3,23 +3,15 @@
   use AppData\Model\Registro;
   class RegistroController
   {
-<<<<<<< HEAD
     private $registrar;
     function __construct()
     {
       $this->registrar=new Registro();
-=======
-    private $registro;
-    function __construct()
-    {
-      $this->registro=new Registro();
->>>>>>> 8bc6fc3f5e27a7b4918688dfdd5b80d52b5fe3e2
     }
     function index()
     {
 
     }
-<<<<<<< HEAD
     public function guardar()
     {
       if (isset($_POST))
@@ -54,13 +46,4 @@
       }
     }
   }
-=======
-    function __destruct()
-    {
-
-    }
-
-  }
-
->>>>>>> 8bc6fc3f5e27a7b4918688dfdd5b80d52b5fe3e2
  ?>

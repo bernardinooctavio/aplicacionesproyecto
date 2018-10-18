@@ -2,14 +2,8 @@
     namespace AppData\Model;
     class Registro
       {
-
         function __construct()
         {
-
-
-        function __construct()
-        {
-            $this->conexion = new conexion();
 
         }
         public function set($atributo,$valor)
@@ -20,7 +14,6 @@
         {
           return $this->$atributo;
         }
-
         public function registrar()
         {
 
@@ -30,11 +23,5 @@
           $sql="INSERT INTO persona(nombre,ap_p,ap_m,edad,id_sexo,id_tipo_usuario)"
           this->conexion->QuerySimple($sql);
        }
-        public function getOne()
-        {
-
-        }
-
-
       }
  ?>
