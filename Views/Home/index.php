@@ -2,7 +2,7 @@
   <div class="col-md-6 ">
     <br>
     <br>
-         <img src="public/imagenes/tesvb.jpg" alt="aplicacionesproyecto" width="800" height="400">
+         <img src="tesvb.jpg" alt="aplicacionesproyecto" width="800" height="400">
      </div>
 
 </div>
