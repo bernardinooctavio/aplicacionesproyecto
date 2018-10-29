@@ -1,217 +1,31 @@
-<div class="container" style="margin-top:5em;">
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th scope="col">materia</th>
-            <td>inteligencia artificial </td>
-        </tr>
+<table class="table">
+<h3>Aplicaiones Web 702</h3>
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Identificacion</th>
+      <th scope="col">Nombre del Alumno</th>
+      <th scope="col">Unidad 1</th>
+      <th scope="col">Unidad 2</th>
+      <th scope="col">Unidad 3</th>
+      <th scope="col">Unidad 4</th>
+      <th scope="col">Promedio</th>
+    </tr>
+  </thead>
+  <tbody>
+<?php
 
-        <tr>
-            <th scope="col">numero</th>
-            <th scope="col">nombre del alumno</th>
-            <th scope="col">unidad 1</th>
-            <th scope="col">unidad 2</th>
-            <th scope="col">unidad 3</th>
-            <th scope="col">unidad 4</th>
-            <th scope="col">unidad 5</th>
-            <th scope="col">unidad 6</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+while($filas=mysqli_fetch_assoc($datos))
+{ ?>
 
-        </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th scope="col">materia</th>
-            <td>Aplicaciones web </td>
-        </tr>
+    <tr>
+      <th scope="row"><?php echo $filas['id_usuario'] ?></th>
+      <td><?php echo $filas['nombre_per'] ?></td>
+      <td></td>
+      <td></td>
+    </tr>
+<?php
+}
 
-        <tr>
-            <th scope="col">numero</th>
-            <th scope="col">nombre del alumno</th>
-            <th scope="col">unidad 1</th>
-            <th scope="col">unidad 2</th>
-            <th scope="col">unidad 3</th>
-            <th scope="col">unidad 4</th>
-            <th scope="col">unidad 5</th>
-            <th scope="col">unidad 6</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th scope="col">materia</th>
-            <td>sistemas programables </td>
-        </tr>
-
-        <tr>
-            <th scope="col">numero</th>
-            <th scope="col">nombre del alumno</th>
-            <th scope="col">unidad 1</th>
-            <th scope="col">unidad 2</th>
-            <th scope="col">unidad 3</th>
-            <th scope="col">unidad 4</th>
-            <th scope="col">unidad 5</th>
-            <th scope="col">unidad 6</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th scope="col">materia</th>
-            <td>gestion de proyectos de software</td>
-        </tr>
-
-        <tr>
-            <th scope="col">numero</th>
-            <th scope="col">nombre del alumno</th>
-            <th scope="col">unidad 1</th>
-            <th scope="col">unidad 2</th>
-            <th scope="col">unidad 3</th>
-            <th scope="col">unidad 4</th>
-            <th scope="col">unidad 5</th>
-            <th scope="col">unidad 6</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        </tbody>
-    </table>
-
-</div>
+?>
+</tbody>
+</table>
