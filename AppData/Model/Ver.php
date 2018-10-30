@@ -2,9 +2,10 @@
     namespace AppData\Model;
     class Ver
       {
+          private $conexion;
         function __construct()
         {
-
+          $this->conexion=new conexion();
         }
         public function set($atributo,$valor)
         {
