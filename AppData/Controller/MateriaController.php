@@ -10,7 +10,9 @@
     }
     function index()
     {
-
+      echo "materias";
+      $datos=$this->materia->getMateria();
+      return $datos;
     }
     function __destruct()
     {
