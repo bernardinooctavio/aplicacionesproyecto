@@ -19,9 +19,14 @@
         {
 
         }
-        public function index(){
+       public function getGrupo(){
+          $sql="SELECT g.id_grupo,g.desc_grupo
+          FROM grupos g";
+          echo $sql;
+          $datos=$this->conexion->QueryResultado($sql);
+          return $datos;
 
-        }
+      }
       }
 
  ?>
