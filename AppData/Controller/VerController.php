@@ -15,6 +15,11 @@
         return $datos;
 
     }
+    function unidad1()
+    {
+      $datos=$this->ver->getunidad1();
+      return $datos;
+    }
     
     function ver(){
 
