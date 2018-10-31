@@ -8,9 +8,12 @@
     {
       $this->grupo=new Grupo();
     }
+    
     function index()
     {
-
+      echo "hola";
+      $datos=$this->grupo->getGrupo();
+      return $datos;
     }
     function __destruct()
     {
