@@ -3,7 +3,9 @@
   <thead class="thead-dark">
     <tr>
       <th scope="col">Identificacion</th>
-      <th scope="col">Nombre del Alumno</th>
+      <th scope="col">Alumno</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
       <th scope="col">Unidad 1</th>
       <th scope="col">Unidad 2</th>
       <th scope="col">Unidad 3</th>
@@ -20,6 +22,8 @@ while($filas=mysqli_fetch_assoc($datos))
     <tr>
       <th scope="row"><?php echo $filas['id_usuario'] ?></th>
       <td><?php echo $filas['nombre_per'] ?></td>
+      <td><?php echo $filas['ap'] ?></td>
+      <td><?php echo $filas['am'] ?></td>
       <td></td>
       <td></td>
     </tr>
