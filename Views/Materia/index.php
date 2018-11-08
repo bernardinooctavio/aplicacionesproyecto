@@ -1,37 +1,110 @@
-<table class="table">
-<h3></h3>
-<h4>Materias</h4>
+<div class="container">
+  <?php
+  if(mysqli_num_rows($datos)>0){
+  ?>
+  <h3>Aplicaciones Web 702</h3>
+  <br>
+
+  <br>
+  <br>
+
+<br>
+  <table class="table table-striped">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">Clave</th>
-      <th scope="col">Materias</th>
-      <th scope="col">Unidades</th>
+      <th scope="col">ID Materias  Unidades</th>
+  <th></th>
+  <th></th>
+  <th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+      <th scope="col">Editar</th>
+      <th scope="col">Eliminar</th>
     </tr>
   </thead>
   <tbody>
 <?php
 
-while($filas=mysqli_fetch_assoc($datos))
-{
+while($fila=mysqli_fetch_assoc($datos))
+{ ?>
 
-  ?>
+
 
     <tr>
-      <th scope="row"><?php echo $filas['id_materia'] ?></th>
-      <td><?php echo $filas['desc_materia'] ?></td>
-      <td><?php echo $filas['no_unidades'] ?></td>
+
+      <td scope="col"><?php echo $fila['id_materia']." ".$fila['desc_materia']." ".$fila['no_unidades']?></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-       <td></td>
+      <td scope="col"></td>
+      <td scope="col"></td>
+      <td scope="col"></td>
+        <td scope="col"></td>
+        <td scope="col"></td>
+
+        <th scope="col"><button class="btn btn-success editar" id="<?php echo $fila['id_materia'] ?>">Editar</button> </th>
+        <th scope="col"><a class="" href="<?php echo URL ?>Materia/eliminar/<?php echo $fila['id_materia'] ?>">Eliminar</button></th>
 
     </tr>
-    <?php
-}
+  <?php } ?>
+    </tbody>
+  </table>
+  <?php
+} else { ?>
+  <h2>No se encuentra ningun dato</h2>
+<?php } ?>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Editando ...</h4>
+      <button type="button" class="close"
+            data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <form class="form-signin" action="" method="post" id="actualizacion">
+        <input type="text" hidden name="id" id="id" value="">
+        <div class="form-group">
+          <input type="text" class="form-control"
+            id="desc_materia" name="desc_materia"></input>
+          <label for="desc_materia">Materia</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control"
+            id="no_unidades" name="no_unidades"></input>
+          <label for="no_unidades">Numero de unidades</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success actualiza"
+        data-dismiss="modal">Actualizar</button>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".editar").click(function(){
+    var id=$(this).attr('id');
+    $.post("<?php echo URL ?>Materia/get/"+id,{},function(data){
+      if(data){
+        data=JSON.parse(data)
+        $("#id").val(data['id_,materia'])
+        $("#desc_materia").val(data['desc_materia'])
+        $("#no_unidades").val(data['no_unidades'])
+        $("#myModal").modal('show');
+      }
+    })
+  })
+  $(".actualiza").click(function(){
+    var arreglo=$("#actualizacion").serializeArray();
+    $.post("<?php echo URL ?>Materia/edit/",{arreglo:arreglo},function(data){
+      window.location.href="<?php echo URL ?>Materia/index";
+    })
+  })
+})
+</script>
 
-?>
-
-</tbody>
-</table>
