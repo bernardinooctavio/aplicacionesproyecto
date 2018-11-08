@@ -1,10 +1,11 @@
 <nav class="navbar fixed-top bg-info">
+
     <ul class="nav nav-tabs" style="margin-left:5em;">
       <li >
         <a class="btn btn-outline-light text-white  my-2 my-sm-0" type="submit" href="Home">TESVB</a>
       </li>
       <li class="nav-item dropdown" style="margin-left:1em;">
-      <a class="nav-link dropdown-toggle btn-outline-light " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Calificaciones</a>
+      <a class="nav-link dropdown-toggle btn-outline-light " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Calificaciones</a>
       <div class="dropdown-menu">
       <a class="dropdown-item" href="<?php echo URL; ?>Ver">Ver</a>
       <a class="dropdown-item" href="<?php echo URL; ?>Acentar">Acentar</a>
@@ -28,3 +29,4 @@
       </form>
     </ul>
 </nav>
+

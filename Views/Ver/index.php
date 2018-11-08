@@ -1,4 +1,5 @@
 <table class="table">
+
 <h3>Aplicaiones Web 702</h3>
   <thead class="thead-dark">
     <tr>
@@ -33,3 +34,4 @@ while($filas=mysqli_fetch_assoc($datos))
 ?>
 </tbody>
 </table>
+
