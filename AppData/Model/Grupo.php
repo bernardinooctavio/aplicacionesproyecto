@@ -2,10 +2,12 @@
     namespace AppData\Model;
     class Grupo
       {
-        private $nombre, $contraseña;
+        
+        //private $nombre, $contraseña;
+        private $conexion;
         public function __construct()
         {
-            //$this->conexion= new conexion();
+            $this->conexion= new conexion();
         }
         public function set($atributo,$valor)
         {
