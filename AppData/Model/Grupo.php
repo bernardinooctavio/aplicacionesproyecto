@@ -2,9 +2,8 @@
     namespace AppData\Model;
     class Grupo
       {
-        
         //private $nombre, $contraseña;
-        private $conexion;
+        private $grupo,$id;
         public function __construct()
         {
             $this->conexion= new conexion();
@@ -29,6 +28,21 @@
           return $datos;
 
       }
+      public function delete(){
+			$sql="DELETE FROM grupos
+			WHERE id_grupo='{$this->id}'";
+			$this->conexion->QuerySimple($sql);
+		}
+    public function updateGrupo(){
+$sql="UPDATE grupos SET desc_grupo='{$this->desc_grupo}' WHERE id_grupo='$this->id'";
+$this->conexion->QuerySimple($sql);
+}
+    public function insertar(){
+$sql= "INSERT INTO  grupos ('id_grupo', 'desc_grupo') VALUES ('','')";
+
+    }
+
       }
 
  ?>
+
