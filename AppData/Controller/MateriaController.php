@@ -44,7 +44,7 @@
 			$data=$_POST['arreglo'];
 			$this->materia->set("id",$data[0]['value']);
 			$this->materia->set("desc_grupo",$data[1]['value']);
-			$this->materia->set("no_unidades",$data[2]s['value']);
+			$this->materia->set("no_unidades",$data[2]['value']);
 			$this->materia->updateGrupo();
       ?>
       <script type="text/javascript">
