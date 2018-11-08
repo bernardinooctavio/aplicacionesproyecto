@@ -2,7 +2,7 @@
     namespace AppData\Model;
     class Materia
       {
-        private $conexion;
+        private $id,$desc_materia,$no_unidades;
         //private $nombre, $contraseña;
         public function __construct()
         {
@@ -29,6 +29,15 @@
           return $datos;
 
         }
+        public function delete(){
+  			$sql="DELETE FROM materias
+  			WHERE id_materia='{$this->id}'";
+  			$this->conexion->QuerySimple($sql);
+  		}
+      public function updateMateria(){
+  $sql="UPDATE materias SET desc_materia='{$this->desc_materia}',no_unidades='{$this->no_unidades}' WHERE id_materia='$this->id'";
+  $this->conexion->QuerySimple($sql);
+  }
       }
 
  ?>
