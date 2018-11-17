@@ -12,13 +12,16 @@
     function index()
     {
 
-      $datos=$this->ver->getAlumns();
+      $datos[0]=$this->ver->getAlumns();
+        $datos[1]=$this->ver->getunidad1();
       return $datos;
 
 }
     function eliminar($id){
+
 			$this->ver->set("id",$id);
 			$this->ver->eliminar();
+
 			?>
 			<script type="text/javascript">
 				$(document).ready(function(){
@@ -64,11 +67,7 @@
       </script>
       <?php
 		}
-    function unidad1()
-    {
-      $datos=$this->ver->getunidad1();
-      return $datos;
-    }
+
 
 
     function __destruct()

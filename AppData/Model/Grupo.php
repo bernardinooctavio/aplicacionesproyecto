@@ -3,7 +3,7 @@
     class Grupo
       {
         //private $nombre, $contraseña;
-        private $grupo,$id;
+        private $id,$desc_grupo,$conexion;
         public function __construct()
         {
             $this->conexion= new conexion();

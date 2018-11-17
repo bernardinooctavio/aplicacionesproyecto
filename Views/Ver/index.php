@@ -1,7 +1,7 @@
 <div class="container">
   <?php
-  if(mysqli_num_rows($datos)>0){
-  ?>
+    if(mysqli_num_rows($datos)>0){
+        ?>
   <h3>Aplicaciones Web 702</h3>
   <br>
 
@@ -40,6 +40,7 @@ while($fila=mysqli_fetch_assoc($datos))
 
       <td scope="col"><?php echo $fila['id_usuario']." ".$fila['ap']." ".$fila['am']." ".$fila['nombre_per'] ?></td>
       <td></td>
+        <td scope="col"><?php echo $fila['calificacion']?></td>
       <td></td>
       <td scope="col"></td>
       <td scope="col"></td>
@@ -47,8 +48,11 @@ while($fila=mysqli_fetch_assoc($datos))
         <td scope="col"></td>
         <td scope="col"></td>
 
-        <th scope="col"><button class="btn btn-success editar" id="<?php echo $fila['id_usuario'] ?>">Editar</button> </th>
-        <th scope="col"><a class="" href="<?php echo URL ?>Ver/eliminar/<?php echo $fila['id_usuario'] ?>">Eliminar</button></th>
+
+        <th scope="col"><button type="button" class="btn btn-success editar" data-toggle="modal" data-target="#exampleModal" id="<?php echo $fila['id_usuario'] ?>">Editar</button></th>
+        <th scope="col"><a class="" href="<?php echo URL ?>Ver/eliminar/<?php echo $fila['id_usuario'] ?>">Eliminar</button> </th>
+
+
 
     </tr>
   <?php } ?>
@@ -101,7 +105,7 @@ $(document).ready(function(){
     $.post("<?php echo URL ?>Ver/get/"+id,{},function(data){
       if(data){
         data=JSON.parse(data)
-        $("#id").val(data['id_usuario'])
+        $("#id").val(data['id_persona'])
         $("#nombre_per").val(data['nombre_per'])
         $("#ap").val(data['ap'])
         $("#am").val(data['am'])

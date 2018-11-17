@@ -1,11 +1,15 @@
 <div class="container">
-  <?php
+    $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+    })
+
+    <?php
+
   if(mysqli_num_rows($datos)>0){
   ?>
+      <br>
+      <br>
   <h3>Aplicaciones Web 702</h3>
-  <br>
-
-  <br>
   <br>
 
 <br>
@@ -43,7 +47,8 @@ while($fila=mysqli_fetch_assoc($datos))
         <td scope="col"></td>
         <td scope="col"></td>
 
-        <th scope="col"><button class="btn btn-success editar" id="<?php echo $fila['id_materia'] ?>">Editar</button> </th>
+
+        <th scope="col"><button type="button" class="btn btn-success editar" data-toggle="modal" data-target="#exampleModal" id="<?php echo $fila['id_materia'] ?>">Editar</button></th>
         <th scope="col"><a class="" href="<?php echo URL ?>Materia/eliminar/<?php echo $fila['id_materia'] ?>">Eliminar</button></th>
 
     </tr>
@@ -55,36 +60,38 @@ while($fila=mysqli_fetch_assoc($datos))
   <h2>No se encuentra ningun dato</h2>
 <?php } ?>
 </div>
-<div id="myModal" class="modal fade" role="dialog">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4 class="modal-title">Editando ...</h4>
-      <button type="button" class="close"
-            data-dismiss="modal">&times;</button>
-    </div>
-    <div class="modal-body">
-      <form class="form-signin" action="" method="post" id="actualizacion">
-        <input type="text" hidden name="id" id="id" value="">
-        <div class="form-group">
-          <input type="text" class="form-control"
-            id="desc_materia" name="desc_materia"></input>
-          <label for="desc_materia">Materia</label>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editando</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-signin" action="" method="post" id="actualizacion">
+                    <input type="text" hidden name="id" id="id" value="">
+                    <div class="form-group">
+                        <input type="text" class="form-control"
+                               id="desc_materia" name="desc_materia"></input>
+                        <label for="desc_materia">Materia</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control"
+                               id="no_unidades" name="no_unidades"></input>
+                        <label for="no_unidades">Numero de unidades</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+                <button type="button" class="btn btn-primary">guardar</button>
+            </div>
         </div>
-        <div class="form-group">
-          <input type="text" class="form-control"
-            id="no_unidades" name="no_unidades"></input>
-          <label for="no_unidades">Numero de unidades</label>
-        </div>
-      </form>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-success actualiza"
-        data-dismiss="modal">Actualizar</button>
-    </div>
-  </div>
 </div>
-</div>
+<br>
 <script type="text/javascript">
 $(document).ready(function(){
   $(".editar").click(function(){

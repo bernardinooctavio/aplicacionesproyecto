@@ -17,7 +17,7 @@
     }
 
 		function eliminar($id){
-			$this->grupo->set("id",$id);
+			$this->grupo->set("id",$id[0]);
 			$this->grupo->delete();
 			?>
 			<script type="text/javascript">
@@ -28,7 +28,7 @@
 						timer: 2000
 					});
 					setTimeout(function(){
-						window.location.href="<?php echo URL ?>Grupo/index"
+						//window.location.href="<?php echo URL ?>Grupo/index"
 					},2100);
 				})
 			</script>

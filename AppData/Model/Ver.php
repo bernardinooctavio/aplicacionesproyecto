@@ -40,17 +40,20 @@
   }
 
         public function getunidad1(){
-          $sql="SELECT c.id_calificacion,c.id_persona,c.calificacion
-          FROM calificaciones c
-          WHERE c.id_calificacion=c.id_persona
-          AND c.calificacion
-          ORDER BY c.id_persona ASC";
-          echo $sql;
-        //  $datos=$this->conexion->QueryResultado($sql);
-          return $datos;
+
+            $sql=" SELECT calificacion FROM calificaciones ";
+
+            //echo $sql;
+            $datos=$this->conexion->QueryResultado($sql);
+
+           // $this->conexion->QuerySimple($sql);
+            return $datos;
+
+           // $this->conexion->QuerySimple($sql);
+
 
         }
-        public function eliminar(){
+         function eliminar($id){
 			$sql="DELETE FROM usuarios
 			WHERE id_usuario='{$this->id}'";
 			$this->conexion->QuerySimple($sql);

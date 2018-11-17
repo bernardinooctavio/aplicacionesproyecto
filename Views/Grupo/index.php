@@ -43,8 +43,9 @@ while($fila=mysqli_fetch_assoc($datos))
         <td scope="col"></td>
         <td scope="col"></td>
 
-        <th scope="col"><button class="btn btn-success editar" id="<?php echo $fila['id_grupo'] ?>">Editar</button> </th>
-        <th scope="col"><a class="" href="<?php echo URL ?>Grupo/eliminar/<?php echo $fila['id_grupo'] ?>">Eliminar</button></th>
+
+        <th scope="col"><button type="button" class="btn btn-success editar" data-toggle="modal" data-target="#exampleModal" id="<?php echo $fila['id_grupo'] ?>">Editar</button></th>
+        <th scope="col"><a class="" href="<?php echo URL ?>Grupo/eliminar/<?php echo $fila['id_grupo'] ?>">Eliminar</a></th>
 
     </tr>
   <?php } ?>
@@ -55,7 +56,7 @@ while($fila=mysqli_fetch_assoc($datos))
   <h2>No se encuentra ningun dato</h2>
 <?php } ?>
 </div>
-<div id="myModal" class="modal fade" role="dialog">
+<div id="exampleModal" class="modal fade" role="dialog">
 <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
@@ -63,7 +64,7 @@ while($fila=mysqli_fetch_assoc($datos))
       <button type="button" class="close"
             data-dismiss="modal">&times;</button>
     </div>
-    <div class="modal-body">
+    <div class="exampleModal">
       <form class="form-signin" action="" method="post" id="actualizacion">
         <input type="text" hidden name="id" id="id" value="">
         <div class="form-group">
