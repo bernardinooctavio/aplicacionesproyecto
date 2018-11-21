@@ -16,8 +16,8 @@
       return $datos;
     }
 
-		function eliminar($id){
-			$this->grupo->set("id",$id[0]);
+		function eliminar($id_grupo){
+			$this->grupo->set("id_grupo",$id_grupo[0]);
 			$this->grupo->delete();
 			?>
 			<script type="text/javascript">
@@ -28,14 +28,14 @@
 						timer: 2000
 					});
 					setTimeout(function(){
-						//window.location.href="<?php echo URL ?>Grupo/index"
+						window.location.href="<?php echo URL ?>Grupo/index"
 					},2100);
 				})
 			</script>
 			<?php
 		}
-    function get($id){
-      $this->grupo->set("id",$id);
+    function get($id_grupo){
+      $this->grupo->set("id_grupo",$id_grupo);
       $datos=$this->grupo->getOne();
       if(mysqli_num_rows($datos)>0){
         $datos=mysqli_fetch_assoc($datos);
@@ -44,23 +44,42 @@
     }
     function edit(){
 			$data=$_POST['arreglo'];
-			$this->grupo->set("id",$data[0]['value']);
+			$this->grupo->set("id_grupo",$data[0]['value']);
 			$this->grupo->set("desc_grupo",$data[1]['value']);
 			$this->grupo->updateGrupo();
       ?>
       <script type="text/javascript">
         $(document).ready(function(){
           swal({
-            title: "Success Listo !!!!",
-            text: "Eliminado correctamente",
+            title: "Listo !!!!",
+            text: "Editado Correctamente",
             timer: 2000
           });
           setTimeout(function(){
-            window.location.href="<?php echo URL ?>Ver/index"
+            window.location.href="<?php echo URL ?>Grupo/index"
           },2100);
         })
       </script>
       <?php
+		}
+    function insert($id_grupo){
+			$this->grupo->set("id_grupo",$id_grupo[0]);
+      $this->grupo->set("dsc_grupo",$desc_grupo[0]);
+			$this->grupo->insertar();
+			?>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					swal({
+						title: "Listo",
+						text: "Dato(s) Insertado(s)",
+						timer: 2000
+					});
+					setTimeout(function(){
+						window.location.href="<?php echo URL ?>Grupo/index"
+					},2100);
+				})
+			</script>
+			<?php
 		}
     function __destruct()
     {
@@ -69,4 +88,3 @@
   }
 
  ?>
-
