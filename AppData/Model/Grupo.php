@@ -3,7 +3,7 @@
     class Grupo
       {
         //private $nombre, $contraseña;
-        private $id,$desc_grupo,$conexion;
+        private $id_grupo,$desc_grupo,$conexion;
         public function __construct()
         {
             $this->conexion= new conexion();
@@ -30,18 +30,19 @@
       }
       public function delete(){
 			$sql="DELETE FROM grupos
-			WHERE id_grupo='{$this->id}'";
+			WHERE id_grupo='{$this->id_grupo[0]}'";
 			$this->conexion->QuerySimple($sql);
 		}
     public function updateGrupo(){
-$sql="UPDATE grupos SET desc_grupo='{$this->desc_grupo}' WHERE id_grupo='$this->id'";
-$this->conexion->QuerySimple($sql);
-}
-    public function insertar(){
-$sql= "INSERT INTO  grupos ('id_grupo', 'desc_grupo') VALUES ('','')";
-
+      $sql="UPDATE grupos SET desc_grupo='{$this->desc_grupo}' WHERE id_grupo='$this->id_grupo'";
+      $this->conexion->QuerySimple($sql);
     }
 
+    function insertar(){
+    //$sql= "INSERT INTO grupos(desc_grupo) VALUES('desc_grupo')";
+  //  $sql "INSERT INTO grupos ('desc_grupo) VALUES ('desc_grupo')";
+        //  $this->conexion->QuerySimple($sql);
+    }
       }
 
  ?>
