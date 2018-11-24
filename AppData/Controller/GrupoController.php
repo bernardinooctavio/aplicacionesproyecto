@@ -62,10 +62,10 @@
       </script>
       <?php
 		}
-    function insert($id_grupo){
+    function insertar($id_grupo){
 			$this->grupo->set("id_grupo",$id_grupo[0]);
-      $this->grupo->set("dsc_grupo",$desc_grupo[0]);
-			$this->grupo->insertar();
+      $this->grupo->set("dsc_grupo",$desc_grupo[1]);
+			$this->grupo->insert();
 			?>
 			<script type="text/javascript">
 				$(document).ready(function(){
@@ -75,12 +75,17 @@
 						timer: 2000
 					});
 					setTimeout(function(){
-						window.location.href="<?php echo URL ?>Grupo/index"
+				//		window.location.href="<?php echo URL ?>Grupo/index"
 					},2100);
 				})
 			</script>
 			<?php
 		}
+    function printgrupo(){
+$datos=$this->grupo->getGrupo();
+return $datos;
+
+    }
     function __destruct()
     {
 

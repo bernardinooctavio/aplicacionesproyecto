@@ -13,14 +13,14 @@
     {
 
       $datos[0]=$this->ver->getAlumns();
-        $datos[1]=$this->ver->getunidad1();
+      $datos[1]=$this->ver->getunidad1();
       return $datos;
 
 }
     function eliminar($id){
 
 			$this->ver->set("id",$id);
-			$this->ver->eliminar();
+			$this->ver->delete();
 
 			?>
 			<script type="text/javascript">
@@ -37,8 +37,8 @@
 			</script>
 			<?php
 		}
-		function get($id_usuario){
-			$this->ver->set("id_usuario",$id_usuario);
+		function get($id){
+			$this->ver->set("id",$id);
 			$datos=$this->ver->getOne();
 			if(mysqli_num_rows($datos)>0){
 				$datos=mysqli_fetch_assoc($datos);
@@ -47,7 +47,7 @@
 		}
 		function edit(){
 			$data=$_POST['arreglo'];
-			$this->ver->set("id_usuario",$data[0]['value']);
+			$this->ver->set("id",$data[0]['value']);
 			$this->ver->set("nombre_per",$data[1]['value']);
 			$this->ver->set("ap",$data[2]['value']);
 			$this->ver->set("am",$data[3]['value']);

@@ -15,7 +15,7 @@
       return $datos;
     }
     function eliminar($id){
-			$this->materia->set("id",$id);
+			$this->materia->set("id",$id[0]);
 			$this->materia->delete();
 			?>
 			<script type="text/javascript">
@@ -61,6 +61,11 @@
       </script>
       <?php
 		}
+    function printmateria(){
+$datos=$this->materia->getMateria();
+return $datos;
+
+    }
     function __destruct()
     {
 

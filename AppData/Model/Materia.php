@@ -31,7 +31,7 @@
         }
         public function delete(){
   			$sql="DELETE FROM materias
-  			WHERE id_materia='{$this->id}'";
+  			WHERE id_materia='{$this->id[0]}'";
   			$this->conexion->QuerySimple($sql);
   		}
       public function updateMateria(){

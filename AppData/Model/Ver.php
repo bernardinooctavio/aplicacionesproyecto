@@ -3,7 +3,7 @@
     class Ver
       {
 
-	     	private $id_usuario, $nombre_per, $ap, $am;
+	     	private $id,$nombre_per,$ap,$am;
         function __construct()
         {
           $this->conexion=new conexion();
@@ -53,7 +53,7 @@
 
 
         }
-         function eliminar($id){
+         function delete($id){
 			$sql="DELETE FROM usuarios
 			WHERE id_usuario='{$this->id}'";
 			$this->conexion->QuerySimple($sql);

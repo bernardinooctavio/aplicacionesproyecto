@@ -11,14 +11,19 @@
       <br>
   <h3>Aplicaciones Web 702</h3>
   <br>
+  <div class="col-"></div>
+  <div class="col-">
+  <br><button type="button" class="btn btn-info pdf"><i><b>Imprimir PDF</b></i></button>
+  </div>
+  <br>
 
 <br>
   <table class="table table-striped">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">ID Materias  Unidades</th>
-  <th></th>
-  <th></th>
+      <th scope="col">ID</th>
+  <th scope="col">Materias</th>
+  <th scope ="col">Unidades</th>
   <th></th>
 <th></th>
 <th></th>
@@ -38,9 +43,9 @@ while($fila=mysqli_fetch_assoc($datos))
 
     <tr>
 
-      <td scope="col"><?php echo $fila['id_materia']." ".$fila['desc_materia']." ".$fila['no_unidades']?></td>
-      <td></td>
-      <td></td>
+      <td scope="col"><?php echo $fila['id_materia']?></td>
+      <td scope="col"><?php echo $fila['desc_materia']?></td>
+      <td scope="col"><?php echo $fila['no_unidades']?></td>
       <td scope="col"></td>
       <td scope="col"></td>
       <td scope="col"></td>
@@ -49,7 +54,7 @@ while($fila=mysqli_fetch_assoc($datos))
 
 
         <th scope="col"><button type="button" class="btn btn-success editar" data-toggle="modal" data-target="#exampleModal" id="<?php echo $fila['id_materia'] ?>">Editar</button></th>
-        <th scope="col"><a class="" href="<?php echo URL ?>Materia/eliminar/<?php echo $fila['id_materia'] ?>">Eliminar</button></th>
+        <th scope="col"><a class="btn btn-danger eliminar" href="<?php echo URL ?>Materia/eliminar/<?php echo $fila['id_materia'] ?>">Eliminar</button></th>
 
     </tr>
   <?php } ?>
@@ -85,8 +90,8 @@ while($fila=mysqli_fetch_assoc($datos))
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
-                <button type="button" class="btn btn-primary">guardar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
             </div>
         </div>
     </div>
@@ -115,3 +120,12 @@ $(document).ready(function(){
 })
 </script>
 
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".pdf").click(function(){
+    //window.open("<?php echo URL?>Grupo/printgrupo");
+    window.location.href="<?php echo URL?>Materia/printmateria";
+    })
+  })
+</script>
