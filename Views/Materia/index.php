@@ -122,10 +122,11 @@ $(document).ready(function(){
 
 
 <script type="text/javascript">
-  $(document).ready(function(){
-    $(".pdf").click(function(){
-    //window.open("<?php echo URL?>Grupo/printgrupo");
-    window.location.href="<?php echo URL?>Materia/printmateria";
+    $(document).ready(function(){
+        $(".pdf").click(function(){
+            //window.open("<?php echo URL?>Grupo/printgrupo");
+            window.location.href="<?php echo URL?>Materia/printmateria";
+        })
     })
-  })
 </script>
+

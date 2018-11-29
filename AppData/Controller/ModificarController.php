@@ -11,6 +11,7 @@
     function index()
     {
 
+
     }
     function __destruct()
     {

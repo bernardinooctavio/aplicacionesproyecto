@@ -23,6 +23,7 @@ session_start();
             {
             if (isset($_SESSION['id_tipo_usuario']) AND $_SESSION['id_tipo_usuario']== 1)
             {
+                echo "Alumno: ";
                 echo $_SESSION['nombre'];
                 ?>
 
@@ -41,6 +42,7 @@ session_start();
             else
             if (isset($_SESSION['id_tipo_usuario']) AND $_SESSION['id_tipo_usuario']== 2)
             {
+                echo "Docente: ";
                 echo $_SESSION['nombre'];
                 ?>
 
@@ -49,33 +51,28 @@ session_start();
                     <a class="nav-link   " data-toggle="dropdown" href="#" id="dropdown01" role="button" aria-haspopup="true" aria-expanded="false">Calificaciones</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="<?php echo URL; ?>Ver/index">calificacion</a>
+                        <a class="dropdown-item" href="<?php echo URL; ?>Acentar">Acentar</a>
+                        <a class="dropdown-item" href="<?php echo URL?>modificar">Modificar</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown" style="margin-left:1em;">
-                    <a class="nav-link   " data-toggle="dropdown" href="#" id="dropdown01" role="button" aria-haspopup="true" aria-expanded="false">Registro</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="<?php echo URL; ?>Materias/index">Acentar</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown" style="margin-left:1em;">
-                    <a class="nav-link   " data-toggle="dropdown" href="#" id="dropdown01" role="button" aria-haspopup="true" aria-expanded="false">Materias</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" hhref="<?php echo URL; ?>Materia/index">Ver</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown" style="margin-left:1em;">
-                    <a class="nav-link   " data-toggle="dropdown" href="#" id="dropdown01" role="button" aria-haspopup="true" aria-expanded="false">Docentes</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="<?php echo URL; ?>Materias/index">Ver</a>
-                    </div>
-                </li>
+
+
                 <?php
             }
             else
             if (isset($_SESSION['id_tipo_usuario']) AND $_SESSION['id_tipo_usuario']== 3)
             {
+            echo "Jefe de divicion: ";
             echo $_SESSION['nombre'];
             ?>
+
+            <li class="nav-item dropdown" style="margin-left:1em;">
+                <a class="nav-link   " data-toggle="dropdown" href="#" id="dropdown01" role="button" aria-haspopup="true" aria-expanded="false">Calificaciones</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="<?php echo URL; ?>Ver/index">calificacion</a>
+                </div>
+
+            </li>
 
             <li class="nav-item dropdown" style="margin-left:1em;">
                 <a class="nav-link "  data-toggle="dropdown" href="#" id="dropdown03" role="button" aria-haspopup="true" aria-expanded="false">Reportes</a>

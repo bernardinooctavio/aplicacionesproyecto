@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1b42674d-6b6d-470b-b76a-829721e6b649" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppData/Controller/VerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/AppData/Controller/VerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppData/Model/Ver.php" beforeDir="false" afterPath="$PROJECT_DIR$/AppData/Model/Ver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Template/Nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Template/Nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Ver/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Ver/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,26 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VerController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AppData/Controller/VerController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ver.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AppData/Model/Ver.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,11 +31,9 @@
       <list>
         <option value="$PROJECT_DIR$/AppData/Config/Enrutador.php" />
         <option value="$PROJECT_DIR$/Views/Template.php" />
-        <option value="$PROJECT_DIR$/Views/Template/Header.php" />
         <option value="$PROJECT_DIR$/Views/Inicio/index.php" />
         <option value="$PROJECT_DIR$/Views/Template/Footer.php" />
         <option value="$PROJECT_DIR$/Views/Template/Main.php" />
-        <option value="$PROJECT_DIR$/Views/Template/Nav.php" />
         <option value="$PROJECT_DIR$/Views/Asignar/index.php" />
         <option value="$PROJECT_DIR$/Views/Login/verify.php" />
         <option value="$PROJECT_DIR$/Views/Login/logout.html" />
@@ -66,10 +45,12 @@
         <option value="$PROJECT_DIR$/AppData/Model/conexion.php" />
         <option value="$PROJECT_DIR$/AppData/Controller/GrupoController.php" />
         <option value="$PROJECT_DIR$/AppData/Model/Grupo.php" />
-        <option value="$PROJECT_DIR$/Views/Ver/index.php" />
         <option value="$PROJECT_DIR$/Views/Grupo/index.php" />
         <option value="$PROJECT_DIR$/AppData/Controller/VerController.php" />
         <option value="$PROJECT_DIR$/AppData/Model/Ver.php" />
+        <option value="$PROJECT_DIR$/Views/Template/Nav.php" />
+        <option value="$PROJECT_DIR$/Views/Template/Header.php" />
+        <option value="$PROJECT_DIR$/Views/Ver/index.php" />
       </list>
     </option>
   </component>
@@ -116,12 +97,6 @@
               <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppData" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppData" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -156,6 +131,18 @@
               <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modificar" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Template" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="aplicacionesproyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aplicacionesproyecto" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Ver" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -167,7 +154,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proyectocalificaciones" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -204,16 +191,16 @@
       <workItem from="1542229458049" duration="2499000" />
       <workItem from="1542240774995" duration="9953000" />
       <workItem from="1542326389685" duration="3379000" />
-      <workItem from="1543085511805" duration="1851000" />
+      <workItem from="1543085511805" duration="4697000" />
+      <workItem from="1543193360850" duration="123000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52075000" />
+    <option name="totallyTimeSpent" value="55044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -243,13 +230,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Views/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/Login/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
@@ -461,13 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Template/Nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/Asignar/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -511,13 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Template/Header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AppData/Config/Enrutador.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -532,13 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Ver/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AppData/Model/Grupo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -550,9 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="72" column="47" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
-          <folding>
-            <element signature="e#4097#4104#1#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -579,15 +535,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AppData/Controller/VerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="442">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Template/Nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" column="35" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Modificar/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Template/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="94" selection-start-line="18" selection-start-column="94" selection-end-line="18" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Ver/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="235" selection-start-line="235" selection-end-line="235" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppData/Model/Ver.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="397">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>

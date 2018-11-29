@@ -1,3 +1,5 @@
+
+
 <div class="container ">
     <?php
     if(mysqli_num_rows($datos)>0) {
@@ -6,7 +8,6 @@
         <br>
         <br>
         <br>
-
         <div class="col col-sm-1 m11">
             <button class="btn btn-outline-success pdf">Imprimir</button>
         </div>
@@ -69,7 +70,7 @@
             while ($fila=mysqli_fetch_assoc($datos)) { ?>
                 <tr>
                     <th scope="col"> <?php echo $fila['ap_p']." ".$fila['ap_m']." ".$fila['nombre'] ?> </th>
-                    <td scope="col"></td>
+                    <th scope="col"><?php echo $fila['calificacion']?></th>
                     <td scope="col"></td>
                     <td scope="col"></td>
                     <td scope="col"></td>
@@ -88,11 +89,9 @@
                             $_SESSION['nombre'];
                             ?>
 
-                            <th scope="col"> <a class="btn btn-outline-danger" href="<?php echo URL ?>Calificaciones/eliminar/<?php echo $fila['id_usuario'] ?>">Eliminar</a> </th>
+                            <th scope="col"> <a class="btn btn-outline-danger" href="<?php echo URL ?>Ver/eliminar/<?php echo $fila['id_usuario'] ?>">Eliminar</a> </th>
 
-                            <th scope="col"> <button class="btn btn-outline-success editar" id="<?php echo $fila['id_usuario'] ?>">Modificar</button> </th>
-
-
+                            <th scope="col"><button type="button" class="btn btn-primary" id="<?php echo $fila['id_usuario'] ?>" data-toggle="modal" data-target="#exampleModalCenter">Modificar</button></th>
 
 
 
@@ -134,9 +133,9 @@
     <?php } ?>
 </div>
 
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog ">
-        <div class="modal-content ">
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Actualizacion de datos</h5>
                 <button type="button" class="close"
@@ -149,7 +148,7 @@
                         <p for="nombre">Nombre</p>
                         <input type="text" class="form-control "
                                id="nombre" name="nombre"></input>
-                        <label for="nombre">Nombre</label>
+
                     </div>
                     <div class="form-group col-xs-6 col-sm-6 col-md-4">
                         <p for="ap_p">Apellido Paterno</p>
@@ -163,13 +162,6 @@
                                id="ap_m" name="ap_m"></input>
 
                     </div>
-                    <div class="form-group col-xs-6 col-sm-6 col-md-4">
-                        <p for="edad">Edad</p>
-                        <input type="text" class="form-control" id="edad" name="edad"></input>
-
-                    </div>
-
-
 
                 </form>
             </div>
@@ -186,7 +178,7 @@
 
         $(".editar").click(function(){
             var id=$(this).attr('id');
-            $.post("<?php echo URL ?>Calificaciones/get/"+id,{},function(data){
+            $.post("<?php echo URL ?>ver/get/"+id,{},function(data){
                 if(data){
                     data=JSON.parse(data)
                     $("#id").val(data['id_usuario'])
@@ -200,21 +192,10 @@
         })
         $(".actualiza").click(function(){
             var arreglo=$("#actualizacion").serializeArray();
-            $.post("<?php echo URL ?>Calificaciones/edit/",{arreglo:arreglo},function(data){
-                window.location.href="<?php echo URL ?>Calificaciones/ver";
+            $.post("<?php echo URL ?>index/edit/",{arreglo:arreglo},function(data){
+                window.location.href="<?php echo URL ?>Ver/index";
             })
         })
-        //eEXAMEN
-
-        /*    $('tr').click(function(){
-              var datos=" ";
-              $(this).find('td').each(function(){
-                datos+=$(this).html()+" ";
-                })
-              alert(datos);
-              })*/
-
-
 
     })
 </script>
@@ -222,8 +203,9 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $(".pdf").click(function(){
-            window.location.href="<?php echo URL ?>Reportes/imprimecalificaciones";
+            //window.open("<?php echo URL?>Grupo/printgrupo");
+            window.location.href="<?php echo URL?>Ver/printacentarver";
         })
     })
-
 </script>
+
