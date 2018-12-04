@@ -71,6 +71,6 @@ while($fila=mysqli_fetch_assoc($datos[5]))
     $d++;
 }
 //$pdf->Cell($largo,7,"Promedio",1,0,'C');
-$pdf->Output("F","reportecalifi.pdf");
+$pdf->Output("F","reportecalificacion.pdf");
 ob_end_flush();
 ?>

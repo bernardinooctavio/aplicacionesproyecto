@@ -76,7 +76,7 @@
        WHERE p.id_persona=a.id_persona
         AND m.id_materia=a.id_materia
         AND g.id_grupo=a.id_grupo
-        AND p.id_usuario=2";
+        AND p.id_usuario=14";
             $datos=$this->conexion->QueryResultado($sql);
             return $datos;
         }
@@ -86,7 +86,7 @@
       WHERE p.id_persona=a.id_persona
       AND m.id_materia=a.id_materia
       AND g.id_grupo=a.id_grupo
-      AND p.id_usuario=2";
+      AND p.id_usuario=14";
             $datos=$this->conexion->QueryResultado($sql);
             return $datos;
         }
@@ -96,7 +96,7 @@
        WHERE p.id_persona=a.id_persona
         AND m.id_materia=a.id_materia
         AND g.id_grupo=a.id_grupo
-        AND p.id_usuario=2";
+        AND p.id_usuario=14";
             $datos=$this->conexion->QueryResultado($sql);
             return $datos;
         }
