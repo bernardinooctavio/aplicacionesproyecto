@@ -1,8 +1,5 @@
 <div class="container">
-    $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-    })
-
+ 
     <?php
 
   if(mysqli_num_rows($datos)>0){
