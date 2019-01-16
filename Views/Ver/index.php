@@ -24,6 +24,7 @@
                 <th scope="col">Unidad 3</th>
                 <th scope="col">Unidad 4</th>
                 <th scope="col">Promedio</th>
+                <th scope="col"></th>
 
                 <?php
 
