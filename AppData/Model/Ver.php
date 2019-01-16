@@ -13,7 +13,10 @@
         public function get($atributo){
             return $this->$atributo;
         }
+        public function get2(){
+        }
         public function getAlumns(){
+        
             //consulta
             $sql="SELECT c.calificacion,p.id_persona,u.id_usuario, p.nombre, p.ap_p, p.ap_m
             FROM calificaciones c,persona p, usuario u
