@@ -31,8 +31,14 @@ session_start();
 
                 <li class="nav-item dropdown" style="margin-left:1em;">
                     <a class="nav-link   " data-toggle="dropdown" href="#" id="dropdown01" role="button" aria-haspopup="true" aria-expanded="false">Calificaciones</a>
+                    
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="<?php echo URL; ?>Ver/index">calificacion</a>
+
+
+
+
+                        <a class="dropdown-item" href="<?php echo URL; ?>Ver">calificacion</a>
+
                     </div>
 
                 </li>
@@ -50,7 +56,7 @@ session_start();
                 <li class="nav-item dropdown" style="margin-left:1em;">
                     <a class="nav-link   " data-toggle="dropdown" href="#" id="dropdown01" role="button" aria-haspopup="true" aria-expanded="false">Calificaciones</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="<?php echo URL; ?>Ver/index">calificacion</a>
+                        <a class="dropdown-item" href="<?php echo URL; ?>Ver">calificacion</a>
                         <a class="dropdown-item" href="<?php echo URL; ?>Acentar">Acentar</a>
                         <a class="dropdown-item" href="<?php echo URL?>modificar">Modificar</a>
                     </div>
@@ -96,9 +102,6 @@ session_start();
 
 
 
-        <!--de aqui para arriba tienes un desmadre-->
-
-        <!--adentro de este pones otras condiciones iguales para validar que tipo menu quieres para el usuario-->
         <?php if (isset($_SESSION['id_tipo_usuario']))
         {
             ?>

@@ -1,18 +1,23 @@
 <div class="container">
- 
+    $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+    })
+
     <?php
 
   if(mysqli_num_rows($datos)>0){
   ?>
-      <br>
-      <br>
-  <h3>Aplicaciones Web 702</h3>
+
+
   <br>
-  <div class="col-"></div>
-  <div class="col-">
-  <br><button type="button" class="btn btn-info pdf"><i><b>Imprimir PDF</b></i></button>
-  </div>
   <br>
+<h3>Lista de Materias</h3>
+<br>
+<div class="col-"></div>
+<div class="col-">
+<br><button type="button" class="btn btn-info pdf"><i><b>Imprimir PDF</b></i></button>
+</div>
+<br>
 
 <br>
   <table class="table table-striped">
@@ -61,6 +66,74 @@ while($fila=mysqli_fetch_assoc($datos))
 } else { ?>
   <h2>No se encuentra ningun dato</h2>
 <?php } ?>
+</div>
+
+<div>
+  <div class="container">
+      <?php
+
+    if(mysqli_num_rows($datos)>0){
+    ?>
+    <br>
+    <br>
+  <h3>Asignar Materias</h3>
+  <br>
+  <div class="col-"></div>
+  <div class="col-">
+  <!--<br><button type="button" class="btn btn-info pdf"><i><b>Imprimir PDF</b></i></button>-->
+  </div>
+  <br>
+
+  <br>
+    <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nombre del Docente</th>
+    <th scope="col">Materia</th>
+    <th scope ="col">Grupo</th>
+    <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+  <?php
+
+  while($fila=mysqli_fetch_assoc($datos))
+  { ?>
+
+
+
+      <tr>
+
+        <td scope="col"><?php echo $fila['id_materia']?></td>
+        <td scope="col"><?php echo $fila['desc_materia']?></td>
+        <td scope="col"><?php echo $fila['no_unidades']?></td>
+        <td scope="col"></td>
+        <td scope="col"></td>
+        <td scope="col"></td>
+          <td scope="col"></td>
+          <td scope="col"></td>
+
+
+          <th scope="col"><button type="button" class="btn btn-success editar" data-toggle="modal" data-target="#exampleModal" id="<?php echo $fila['id_materia'] ?>">Editar</button></th>
+          <th scope="col"><a class="btn btn-danger eliminar" href="<?php echo URL ?>Materia/eliminar/<?php echo $fila['id_materia'] ?>">Eliminar</button></th>
+
+      </tr>
+    <?php } ?>
+      </tbody>
+    </table>
+    <?php
+  } else { ?>
+    <h2>No se encuentra ningun dato</h2>
+  <?php } ?>
+  </div>
+
+
 </div>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -126,4 +199,3 @@ $(document).ready(function(){
         })
     })
 </script>
-

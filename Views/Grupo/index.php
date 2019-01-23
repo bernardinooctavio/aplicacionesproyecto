@@ -2,13 +2,14 @@
   <?php
   if(mysqli_num_rows($datos)>0){
   ?>
-  <h3>Aplicaciones Web 702</h3>
   <br>
+  <br>
+  <h3>Listado de Grupos</h3>
+  <br><button type="button" class="btn btn-info pdf"><i><b>Imprimir PDF</b></i></button>
 <div class="col-"></div>
 <div class="col-">
-<br><button type="button" class="btn btn-info pdf"><i><b>Imprimir PDF</b></i></button>
+
 </div>
-  <br>
   <br>
 
 <br>
@@ -126,12 +127,7 @@ $(document).ready(function(){
                     <div class="form-group">
                         <input type="text" class="form-control"
                                id="desc_grupo" name="desc_grupo"></input>
-                        <label for="desc_grupo">ID</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control"
-                               id="desc_grupo" name="desc_grupo"></input>
-                        <label for="desc_grupo">Numero del Grupo</label>
+                        <label for="desc_grupo">Numero del grupo</label>
                     </div>
                 </form>
             </div>

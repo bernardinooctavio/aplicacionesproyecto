@@ -26,7 +26,7 @@ class Login
         return $this->$atributo;
     }
     public function verify(){
-        $sql="SELECT u.id_usuario, p.nombre, p.ap_p, p.ap_m, u.id_tipo_usuario
+        $sql="SELECT p.id_persona,u.id_usuario, p.nombre, p.ap_p, p.ap_m, u.id_tipo_usuario
           FROM persona p, usuario u, sexo s, tipo_usuario tu
           WHERE u.nickname='{$this->usuario}'
             AND u.password='{$this->contraseña}'
@@ -41,9 +41,12 @@ class Login
 
     }
     public function guardar(){
-        $slq="INSERT INTO usuario (nickname, password, id_tipo_usuario) VALUES ('{$this->nickname}','{$this->password}','{$this->id_tipo_usuario}')";
+        $slq="INSERT INTO usuario (nickname, password, id_tipo_usuario)
+         VALUES ('{$this->nickname}','{$this->password}','{$this->id_tipo_usuario}')";
         $this->conexion->QuerySimple($slq);
-        $sql="SELECT * FROM usuario WHERE nickname='{$this->nickname}' AND password='{$this->password}'";
+        $sql="SELECT * FROM usuario
+        WHERE nickname='{$this->nickname}'
+        AND password='{$this->password}'";
         $dato=$this->conexion->QueryResultado($sql);
         //var_dump($dato);
         //print_r($dato);
@@ -52,7 +55,8 @@ class Login
         }
         if(isset($datos['id_usuario'])){
 
-            $sql="INSERT INTO persona(nombre, ap_p, ap_m, edad, id_sexo, id_usuario) VALUES ('{$this->nombre}','{$this->ap_p}','{$this->ap_m}','{$this->edad}','{$this->id_sexo}','{$datos['id_usuario']}')";
+            $sql="INSERT INTO persona(nombre, ap_p, ap_m, edad, id_sexo, id_usuario)
+            VALUES ('{$this->nombre}','{$this->ap_p}','{$this->ap_m}','{$this->edad}','{$this->id_sexo}','{$datos['id_usuario']}')";
             $this->conexion->QuerySimple($sql);
         }
     }

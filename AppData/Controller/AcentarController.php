@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace AppData\Controller;
 use AppData\Model\Acentar;
 class acentarController{
@@ -18,6 +18,17 @@ class acentarController{
         $datos[8]=$this->acentar->getmodificarunidad();
 		return $datos;
 	}
+
+function get($id){
+	$this->acentar->set("id",$id);
+	$datos=$this->acentar->getone();
+	// return $datos;
+	if(mysqli_num_rows($datos)>0){
+		$datos=mysqli_fetch_assoc($datos);
+	}
+	echo json_encode($datos);
+	// return $datos;
+}
 	public function guardar()
 	{
 		if (isset($_POST))
@@ -26,6 +37,7 @@ class acentarController{
 			$this->acentar->set("id_persona",$_POST['id_persona']);
 			$this->acentar->set("id_materia",$_POST['id_materia']);
 			$this->acentar->set("id_unidad",$_POST['id_unidad']);
+			$this->acentar->set("id_usuario",$_POST['id_usuario']);
 			$this->acentar->guardar();
 			?>
 
@@ -42,11 +54,11 @@ class acentarController{
                 });
 				window.location.href="<?php echo URL?>acentar";
 			</script>
-			<?php 
+			<?php
 		}
 	}
 
-	
+
 	function __destruct(){
 
 	}

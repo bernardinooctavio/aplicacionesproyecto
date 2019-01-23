@@ -8,42 +8,41 @@
     if ($datos[2]->num_rows > 0) //si la variable tiene al menos 1 fila entonces seguimos con el codigo
                             {
                                 $acentargrupo="";
-                                while ($row = $datos[2]->fetch_array(MYSQLI_ASSOC)) 
+                                while ($row = $datos[2]->fetch_array(MYSQLI_ASSOC))
                                 {
                                     $acentargrupo .=" <option value='".$row['id_grupo']."'>".$row['desc_grupo']."</option>"; //concatenamos el los options para luego ser insertado en el HTML
                                 }
-
-                            } 
+                            }
 ?>
 <?php
     if ($datos[1]->num_rows > 0) //si la variable tiene al menos 1 fila entonces seguimos con el codigo
                             {
                                 $acentarmateria="";
-                                while ($row = $datos[1]->fetch_array(MYSQLI_ASSOC)) 
+                                while ($row = $datos[1]->fetch_array(MYSQLI_ASSOC))
                                 {
                                     $acentarmateria .=" <option value='".$row['id_materia']."'>".$row['desc_materia']."</option>"; //concatenamos el los options para luego ser insertado en el HTML
                                 }
-                            } 
+                            }
 ?>
 <?php
     if ($datos[3]->num_rows > 0) //si la variable tiene al menos 1 fila entonces seguimos con el codigo
                             {
                                 $acentarunidad="";
-                                while ($row = $datos[3]->fetch_array(MYSQLI_ASSOC)) 
+                                while ($row = $datos[3]->fetch_array(MYSQLI_ASSOC))
                                 {
                                     $acentarunidad .=" <option value='".$row['id_unidad']."'>".$row['desc_unidad']."</option>"; //concatenamos el los options para luego ser insertado en el HTML
                                 }
-                            } 
+                            }
 ?>
 <?php
     if ($datos[4]->num_rows > 0) //si la variable tiene al menos 1 fila entonces seguimos con el codigo
                             {
                                 $acentarsemestre="";
-                                while ($row = $datos[4]->fetch_array(MYSQLI_ASSOC)) 
+                                while ($row = $datos[4]->fetch_array(MYSQLI_ASSOC))
                                 {
                                     $acentarsemestre .=" <option value='".$row['id_semestre']."'>".$row['descripcion']."</option>"; //concatenamos el los options para luego ser insertado en el HTML
                                 }
-                            } 
+                            }
 ?>
 <center>
 <form id="form-reg" class="" action="<?php echo URL ?>acentar/guardar" method="post">
@@ -89,13 +88,14 @@
   <table class="table table-striped">
     <thead class="thead-dark">
       <tr>
-        <h3 align="center" style="color: ##563d7c">Calificaciones para Aplicaciones web</h3>
+        <h3 align="center" style="color: ##563d7c">Acentar Calificaciones</h3>
         <th scope="col">Alumno</th>
         <th scope="col"></th>
         <th scope="col"></th>
         <th scope="col">Calificacion</th>
         <th scope="col"></th>
-        <th scope="col">Acentar Calificacion</th>
+        <th scope="col">Acentar</th>
+        <th scope="col">Editar</th>
       </tr>
     </thead>
     <tbody>
@@ -118,16 +118,18 @@
                       <td></td> -->
                       <th scope="col"><input type="text" name="calificacion" id="calificacion" class="form-control input-sm" placeholder="Calificacion" required="true"></th>
                       <th></th>
-                      <th scope="col"><button class="btn btn-success editar" id="<?php echo $fila['id_usuario'] ?>">Acentar</button> </th>
-                      <th scope="col"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                              Editar
-                          </button></th>
-                      
+                      <!-- <th scope="col"><button class="btn btn-success" id="<?php echo $fila['id_usuario'] ?>">Acentar</button> </th> -->
+                      <th scope="col"><button class="btn btn-success">Acentar</button> </th>
+                      <th scope="col"><button type"button" class="btn btn-primary editar" id="<?php echo $fila['id_usuario'] ?>" data-toggle="modal" data-target="#exampleModalCenter">Editar</button> </th>
+                      <!-- <th scope="col"><button type="button" class="btn btn-primary" id="<?php echo $fila['id_usuario'] ?> " data-toggle="modal" data-target="#exampleModalCenter"> -->
+                              <!-- Editar -->
+                          <!-- </button></th> -->
+
                   </tr>
           <?php
               }
           ?>
-          
+
     </tbody>
   </table>
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -181,7 +183,12 @@
                                             <div class="">
                                                 <div class="panel panel-default">
                                                     <div class="panel-heading text-center">
-                                                        <h3 class="panel-title"><i><b>Modificar Calificacion</b></i></h3><br>
+                                                    <?php
+                                                      ?>
+                                                        <h3 class="panel-title" ><i><b>Modificar Calificacion</b></i></h3><br>
+                                                        <?php
+                                                      
+                                                            ?>
                                                     </div>
                                                     <div class="panel-body">
                                                         <form role="form">
@@ -295,32 +302,32 @@
     if ($datos[0]->num_rows > 0) //si la variable tiene al menos 1 fila entonces seguimos con el codigo
                             {
                                 $acentarpersona="";
-                                while ($row = $datos[0]->fetch_array(MYSQLI_ASSOC)) 
+                                while ($row = $datos[0]->fetch_array(MYSQLI_ASSOC))
                                 {
                                     $acentarpersona .=" <option value='".$row['id_persona']."'>".$row['ap_p']." ".$row['ap_m']." ".$row['nombre']."</option>"; //concatenamos el los options para luego ser insertado en el HTML
                                 }
 
-                            } 
+                            }
 ?>
 <?php
     if ($datos[1]->num_rows > 0) //si la variable tiene al menos 1 fila entonces seguimos con el codigo
                             {
                                 $acentarmateria="";
-                                while ($row = $datos[1]->fetch_array(MYSQLI_ASSOC)) 
+                                while ($row = $datos[1]->fetch_array(MYSQLI_ASSOC))
                                 {
                                     $acentarmateria .=" <option value='".$row['id_materia']."'>".$row['desc_materia']."</option>"; //concatenamos el los options para luego ser insertado en el HTML
                                 }
-                            } 
+                            }
 ?>
 <?php
     if ($datos[3]->num_rows > 0) //si la variable tiene al menos 1 fila entonces seguimos con el codigo
                             {
                                 $acentarunidad="";
-                                while ($row = $datos[3]->fetch_array(MYSQLI_ASSOC)) 
+                                while ($row = $datos[3]->fetch_array(MYSQLI_ASSOC))
                                 {
                                     $acentarunidad .=" <option value='".$row['id_unidad']."'>".$row['desc_unidad']."</option>"; //concatenamos el los options para luego ser insertado en el HTML
                                 }
-                            } 
+                            }
 ?>
 <form id="form-reg" class="" action="<?php echo URL ?>acentar/guardar" method="post">
 <div class="container" style="margin-top:5em;">
@@ -340,9 +347,9 @@
                   <div class="form-group">
                     <input type="text" name="calificacion" id="calificacion" class="form-control input-sm" placeholder="Calificacion" required="true">
                   </div>
-                
+
                  </div>
-                <!-- <div class="row"> --             
+                <!-- <div class="row"> --
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <select name="id_materia"  class="form-control">
@@ -352,7 +359,7 @@
 
                     </div>
                 </div>
-                
+
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <select name="id_persona"  class="form-control">
@@ -371,7 +378,7 @@
 
                     </div>
                 </div>
-                
+
               <input type="submit" value="Acentar Calificacion" class="btn">
 
             </form>

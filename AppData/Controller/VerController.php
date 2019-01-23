@@ -8,18 +8,26 @@
           $this->ver=new ver();
 
       }
-      function index(){
-          $datos=$this->ver->getAlumns();
-          return $datos;
-
+      function index($id){
+        $this->ver->set("id",$id);
+        $datos[0]=mysqli_fetch_assoc($this->ver->getData());
+        $datos[1]=$this->ver->getAlumnsh();
+        $datos[2]=$this->ver->getmati();
+        return $datos;
+      }
+      function indx()
+      {
+        // $datos[0]=mysqli_fetch_assoc($this->ver->getData());
+        $datos[1]=$this->ver->getcal();
+        return $datos;
       }
       function ver(){
-
       }
 
       function select(){
-    $datos=$this->ver->setMaterias();
-    return $datos;
+        $datos=$this->ver->getMateriash();
+        return $datos;
+
       }
       function eliminar($id){
           $this->ver->set("id",$id[0]);

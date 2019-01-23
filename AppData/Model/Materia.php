@@ -29,6 +29,20 @@
           return $datos;
 
         }
+        public function getAsignamateria(){
+          $sql="SELECT p.nombre, p.ap_p, p.ap_m, m.desc_materia, g.desc_grupo
+           FROM persona p, materias m, grupos g, asigna_mat a,usuario u
+           WHERE p.id_usuario=u.id_usuario
+           AND u.id_tipo_usuario=2
+           AND p.id_persona=a.id_persona
+           AND m.id_materia=a.id_materia
+           AND g.id_grupo=a.id_grupo 
+          ORDER BY p.ap_p ASC";
+          echo $sql;
+          $datos=$this->conexion->QueryResultado($sql);
+          return $datos;
+
+        }
         public function delete(){
   			$sql="DELETE FROM materias
   			WHERE id_materia='{$this->id[0]}'";

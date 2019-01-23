@@ -28,6 +28,7 @@ class LoginController
                     $_SESSION["id_usuario"]=$datos["id_usuario"];
                     $_SESSION["nombre"]=$datos["nombre"]." ".$datos["ap_p"]." ".$datos["ap_m"];
                     $_SESSION["id_tipo_usuario"]=$datos["id_tipo_usuario"];
+                    $_SESSION["id_persona"]=$datos["id_persona"];
                     ?>
                     <script type="text/javascript">
                         window.location="<?php echo URL.'Home'?>";
